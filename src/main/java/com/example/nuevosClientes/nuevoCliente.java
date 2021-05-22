@@ -18,7 +18,7 @@ public class nuevoCliente extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<html><body style='background-color: beige; padding:10px;'>");
+        out.println("<html><body style='background-color: red; padding:10px;'>");
         String nombre= request.getParameter("nombre");
         String cargo= request.getParameter("cargo");
         String empresa= request.getParameter("empresa");

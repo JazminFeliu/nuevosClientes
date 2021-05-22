@@ -35,7 +35,7 @@ public class HelloServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-       String usuario=request.getParameter("usuario");
+        String usuario=request.getParameter("usuario");
         String clave=request.getParameter("password");
         out.println("<html><body style='background-color: beige; padding:10px;'>");
         if(clave.equals("root"))
